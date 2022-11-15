@@ -33,6 +33,7 @@ function App() {
       })
       .catch((err) => {
         console.error(err);
+        alert("Something went wrong, Try again!");
       });
   };
 
@@ -43,7 +44,7 @@ function App() {
           <input type="number" ref={limitRef} placeholder="Input Limit" />
         </div>
 
-        <button type="submit">Show</button>
+        <button type="submit">Submit</button>
       </form>
       <div>Prime Numbers:</div>
       <div className="row">
